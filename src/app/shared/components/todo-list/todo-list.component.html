@@ -1,0 +1,22 @@
+<h2 class="text-center">Todo List</h2>
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group" *ngIf="todos.length > 0; else noTodo">
+            <li class="list-group-item d-flex justify-content-between" *ngFor="let todo of todos">
+                <strong>
+                    {{todo.todoItem}}
+                </strong>
+                <div>
+                    <button class="btn btn-sm btn-outline-info mr-3">Edit</button>
+                    <button class="btn btn-sm btn-outline-danger" (click)="onRemoveTodo(todo)">Remove</button>
+                </div>
+            </li>
+        </ul>
+
+        <ng-template #noTodo>
+            <p class="alert alert-info" >
+                No todos added yet!!!
+            </p>
+        </ng-template>
+    </div>
+</div>
