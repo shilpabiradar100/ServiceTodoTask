@@ -1,27 +1,12 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-todo-list',
-//   templateUrl: './todo-list.component.html',
-//   styleUrls: ['./todo-list.component.scss']
-// })
-// export class TodoListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
 
 
 import { Component, OnInit } from '@angular/core';
-//import { Itodo } from '../../models/todo.interface';
+
 import { TodoService } from '../../services/todo.service';
 import { SnackbarService } from '../../services/snackbar.service';
 import { Itodo } from '../../models/todo.interface';
-//import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-//import { GetConfirmComponent } from '../get-confirm/get-confirm.component';
+
+import { GetConfirmComponent } from '../get-confirm/get-confirm.component';
 
 @Component({
   selector: 'app-todo-list',
