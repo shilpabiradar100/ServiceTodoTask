@@ -1,24 +1,10 @@
-// import { Component, OnInit } from '@angular/core';
 
-// @Component({
-//   selector: 'app-todo-form',
-//   templateUrl: './todo-form.component.html',
-//   styleUrls: ['./todo-form.component.scss']
-// })
-// export class TodoFormComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { TodoService } from '../../services/todo.service';
-//import { UuidService } from '../../services/uuid.service';
+
 import { SnackbarService } from '../../services/snackbar.service';
 import { UuidService } from '../../services/uuid.service';
 
